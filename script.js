@@ -1,7 +1,7 @@
-import * as THREE from "./Imports/three.module.js"
-import { EffectComposer } from './Imports/EffectComposer.js';
-import { RenderPass } from './Imports/RenderPass.js';
-import { UnrealBloomPass } from './Imports/UnrealBloomPass.js';
+import * as THREE from "./Portfolio/Imports/three.module.js"
+import { EffectComposer } from './Portfolio/Imports/EffectComposer.js';
+import { RenderPass } from './Portfolio/Imports/RenderPass.js';
+import { UnrealBloomPass } from './Portfolio/Imports/UnrealBloomPass.js';
 
 
 let scene, camera, renderer, meshCube, ambientLight, light, composer
