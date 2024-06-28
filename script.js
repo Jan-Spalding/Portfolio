@@ -1,7 +1,7 @@
 import * as THREE from "./Imports/three.module.js"
-import { EffectComposer } from './Imports/EffectComposer.js';
-import { RenderPass } from './Imports/RenderPass.js';
-import { UnrealBloomPass } from './Imports/UnrealBloomPass.js';
+// import { EffectComposer } from './Imports/EffectComposer.js';
+// import { RenderPass } from './Imports/RenderPass.js';
+// import { UnrealBloomPass } from './Imports/UnrealBloomPass.js';
 
 
 let scene, camera, renderer, meshCube, ambientLight, light, composer
@@ -46,17 +46,17 @@ function init() {
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.BasicShadowMap;
 
-  const renderScene = new RenderPass( scene, camera );
+  // const renderScene = new RenderPass( scene, camera );
 
 
-  const bloomPass = new UnrealBloomPass( new THREE.Vector2( window.innerWidth, window.innerHeight ), 1.5, 0.4, 0.85 );
-  bloomPass.threshold = 0
-  bloomPass.strength = 1.1
-  bloomPass.radius = 0
+  // const bloomPass = new UnrealBloomPass( new THREE.Vector2( window.innerWidth, window.innerHeight ), 1.5, 0.4, 0.85 );
+  // bloomPass.threshold = 0
+  // bloomPass.strength = 1.1
+  // bloomPass.radius = 0
 
-  composer = new EffectComposer( renderer );
-  composer.addPass( bloomPass );
-  composer.addPass( renderScene );
+  // composer = new EffectComposer( renderer );
+  // composer.addPass( bloomPass );
+  // composer.addPass( renderScene );
 
   document.getElementById("home").appendChild(renderer.domElement);
   renderer.domElement.style.position = "absolute"
@@ -95,7 +95,7 @@ function animate() {
   meshCube.material.color.set(sphereColour) 
 
   renderer.render(scene, camera)
-  composer.render();
+  // composer.render();
 }
 
 window.onload = init
