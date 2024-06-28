@@ -1,0 +1,10 @@
+TO-DO LIST:
+- change picture in about me
+- add skills section
+
+Features wanting to add:
+- about me
+- skills (hobbies [scouts], school)
+- projects (personal and professional)
+- awards/ achievements (music dofe cycling lands end)
+- contact me
