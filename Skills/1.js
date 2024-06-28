@@ -1,7 +1,7 @@
-import * as THREE from "./Imports/three.module.js"
+import * as THREE from "../Imports/three.module.js"
 
-import {FBXLoader} from "./Imports/FBXLoader.js"
-import {OrbitControls} from "./Imports/OrbitControls.js"
+import {FBXLoader} from "../Imports/FBXLoader.js"
+import {OrbitControls} from "../Imports/OrbitControls.js"
 
 let sceneONE, cameraONE, loaderONE, ambientLightONE, lightONE, rendererONE, orbitCameraONE, clockONE, modelONE
 
