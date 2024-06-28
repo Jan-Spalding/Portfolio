@@ -1,7 +1,7 @@
-import * as THREE from "/Imports/three.module.js"
-import { EffectComposer } from '/Imports/EffectComposer.js';
-import { RenderPass } from '/Imports/RenderPass.js';
-import { UnrealBloomPass } from '/Imports/UnrealBloomPass.js';
+import * as THREE from "./Imports/three.module.js"
+import { EffectComposer } from './Imports/EffectComposer.js';
+import { RenderPass } from './Imports/RenderPass.js';
+import { UnrealBloomPass } from './Imports/UnrealBloomPass.js';
 
 
 let scene, camera, renderer, meshCube, ambientLight, light, composer
@@ -117,6 +117,6 @@ window.addEventListener("resize", onWindowResize)
 
 for (let i = 0; i < document.getElementsByClassName("editMore").length; i++) {
   document.getElementsByClassName("editMore")[i].addEventListener("click", function() {
-    location.href = "/editing.html"
+    location.href = "./editing.html"
   })
 }

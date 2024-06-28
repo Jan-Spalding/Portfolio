@@ -14,7 +14,7 @@ document.addEventListener("resize", function() {
 }) 
 
 document.getElementById("navHome").addEventListener("click", function() {
-  location.href = "/"
+  location.href = "./"
 })
 
 document.getElementById("toTop").addEventListener("click", function() {
