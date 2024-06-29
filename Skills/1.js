@@ -17,7 +17,7 @@ function initONE() {
   
 
   loaderONE = new FBXLoader()
-  loaderONE.load("/Models/AK-47.fbx", (fbx) => {
+  loaderONE.load("/Portfolio/Models/AK-47.fbx", (fbx) => {
     modelONE = fbx
     fbx.scale.setScalar(0.0005)
     fbx.position.y -= Math.PI/2
