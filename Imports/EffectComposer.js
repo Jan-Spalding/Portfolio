@@ -8,11 +8,11 @@ import {
 	RGBAFormat,
 	Vector2,
 	WebGLRenderTarget
-} from '/Porfolio/Imports/three.module.js';
-import { CopyShader } from '/Porfolio/Imports/CopyShader.js';
-import { ShaderPass } from '/Porfolio/Imports/ShaderPass.js';
-import { MaskPass } from '/Porfolio/Imports/MaskPass.js';
-import { ClearMaskPass } from '/Porfolio/Imports/MaskPass.js';
+} from '/Portfolio/Imports/three.module.js';
+import { CopyShader } from '/Portfolio/Imports/CopyShader.js';
+import { ShaderPass } from '/Portfolio/Imports/ShaderPass.js';
+import { MaskPass } from '/Portfolio/Imports/MaskPass.js';
+import { ClearMaskPass } from '/Portfolio/Imports/MaskPass.js';
 
 class EffectComposer {
 
