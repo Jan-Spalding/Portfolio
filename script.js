@@ -41,7 +41,7 @@ function init() {
   renderer.setClearColor( 0x000000, 0 );
   renderer.setSize(window.innerWidth, window.innerHeight);
 
-  renderer.setSize(300, 200)
+  // renderer.setSize(300, 200)
 
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.BasicShadowMap;
