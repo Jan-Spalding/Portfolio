@@ -31,7 +31,7 @@ body {
   transition-duration: 0.2s;
 }
 
-.left a {
+.purpButton {
   color:#5239cc;
   font-size: 40px;
   border:5px solid #5239cc;
@@ -47,8 +47,7 @@ body {
   align-items:center;
 }
 
-
-.left a:hover {
+.purpButton:hover {
   background-color: #5239cc;
   color: white;
 }
