@@ -13,9 +13,9 @@
 <body>
   <div id="home"></div>
 
-  <div id="nav">
+  <div class="slideDown" id="nav">
     <div style="display:flex;align-items: center;">
-      <a id="navHome" class="center" style="margin-left:30px;padding:0;"> <img draggable="false" width="80px" src="./Images/js.png" style="width:6vw"> </a>
+      <a id="navHome" class="center" style="margin-left:30px;padding:0;"> <img draggable="false" width="80px" src="./Images/.js.png" style="width:6vw"> </a>
     </div>
     <div style="position:relative; width:50%; display:flex;justify-content: space-evenly;align-items: center;">
       <a class="respSize" style="font-weight: bold;" id="navAbout">About</a>
@@ -28,10 +28,10 @@
   <div id="page">
     
     <div class="center" style="height: 77vh;width:100%;padding-top:3%">
-      <div class="left">
+      <div class="left slideLeft">
         <h1 style="margin:0;font-size:8.5vw;">Jan Spalding</h1>
         <h3 style="margin-top:50px;font-size:2.5vw;">A dedicated programmer and computer scientist.</h3>
-        <a style="padding:10px;" class="respSize purpButton" href="#">CONTACT ME</a>
+        <a style="padding:10px;animation-delay:0.5s;opacity:0;" class="respSize slideLeft" href="#">CONTACT ME</a>
       </div>
       <div class="right"></div>  
     </div>
@@ -45,7 +45,7 @@
 
     
     
-    <div class="center" id="about" style="margin-top:15vh;">
+    <div class="center slideLeft" id="about" style="margin-top:15vh;">
       <div class="bar-2-style-1 center">
         <div class="bar-2" style="width:5vw"></div>
         <div class="bar-2" style="width:10vw"></div>
@@ -57,12 +57,12 @@
       </div>
       <div class="center" style="height:70vh; width: 95%; background-color: #1c2333; border-radius: 16px; margin-top:5vh;">
         <div class="center" style="position: relative; width:40%;">
-          <img src="./Images/unknown (1).png" style="height:60vh;width:75%;border-radius: 16px;border: 5px dashed black;">
+          <img src="./Images/face_picture.jpg" style="height:60vh;width:80%;border-radius: 16px;border: 5px dashed black;aspect-ratio: 4/3;">
         </div>
         <div style="color:white;width:60%;padding-right:50px;">
 
           <p style="font-size:4.5vw;">Hello! I'm <span style="color:#5239cc;font-weight: bold;">Jan Spalding</span></p>
-
+  
           <p style="font-size: 2vw;">I'm a 20 year old male, based in the UK, Colchester. Currently studying Computer Science at the University of Essex.</p>
           
           <p style="font-size: 2vw;">Following my interests, I find meaning in developing and practicing the skills learnt in order to create and solve.</p>
@@ -72,15 +72,23 @@
     </div>
 
     <div class="center" id="skill" style="display:flex;margin-top:15vh;">
-      <div class="center" style="height:90vh; width: 95%; background-color: #1c2333; border-radius: 8px;">
-        <div style="color:white;width:50%;padding-left:40px;padding-top: 15vh;">
-          <div class="bar center">
-            <h2 style="font-size: 3vw;">SKILLS</h2>
-          </div>
-          <div class="center text" style="display:flex;">
-            <p style="font-size: 2vw;"> Editing</p>
-            <a style="padding:10px;" class="respSize editMore purpButton" href="#">OPEN PORTFOLIO</a>
-<!--             <button class="editMore">Portfolio</button> -->
+      <div class="bar-2-style-1 center">
+        <div class="bar-2" style="width:5vw"></div>
+        <div class="bar-2" style="width:10vw"></div>
+        <div class="bar-2 center" style="width:50vw">
+          <h2 style="font-size: 3vw;">SKILLS</h2>
+        </div>
+        <div class="bar-2" style="width:10vw"></div>
+        <div class="bar-2" style="width:5vw"></div>
+      </div>
+      <div class="center" style="height:90vh; width: 95%; background-color: #1c2333; border-radius: 8px;margin-top:5vh;">
+        
+        <div style="color:white;width:50%;height:100%;padding-left:40px;padding-right:40px;">
+          <div class="column text" style="display:flex;">
+            <h1 style="font-size: 4.5vw;color:#5239cc;"> Editing</h1>
+            <hr style="width:100%;">
+            <p style="font-size: 2vw;">Inspired by many videos online of people editing their highlights, I thought that it wouldn't be too hard to learn. And on the 20th of June 2023, I posted my first proper edit. I used Davinci Resolve since it was free and was a great program to get me started. Up until the present, I've enjoyed creatively putting together highlights into something that becomes enjoyable for people to watch.</p>
+            <button class="editMore">MORE INFO</button>
           </div>
           <div class="center text">
             <p style="font-size: 2vw;"> skill about </p>
@@ -118,7 +126,7 @@
           <summary class="center" style="height:100px;width:100%;background-color:purple;">Title</summary>  
           <hr style="color:white;">
           <div class="dropdetail">
-            
+            <button class="editMore">Portfolio</button>
           </div>
           
         </details>
