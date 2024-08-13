@@ -78,8 +78,12 @@ for(let i = 0; i < frames.length-1; i++) {
   frames[i].addEventListener("click", function() {
     if(current != frames[i].id) {
       current = i
-      text[current].style.display = "flex"
-      text[behind()].style.display = "none"
+      // text[current].style.display = "flex"
+      text[current].classList.add("slideRight")
+      text[current].classList.remove("slideLeftOut")
+      // text[behind()].style.display = "none"
+      text[behind()].classList.add("slideLeftOut")
+      text[behind()].classList.remove("slideRight")
       frames[behind()].style.display = "none"
       frames[infront()].style.display = "flex"
     }
@@ -92,8 +96,12 @@ frames[frames.length-1].addEventListener("click", function() {
   frames[frames.length-2].style.display = "none"
   frames[0].style.display = "flex"
   frames[1].style.display = "flex"
-  text[0].style.display = "flex"
-  text[text.length-1].style.display = "none"
+  // text[0].style.display = "flex"
+  text[0].classList.add("slideRight")
+  text[0].classList.remove("slideLeftOut")
+  // text[text.length-1].style.display = "none"
+  text[text.length-1].classList.add("slideLeftOut")
+  text[text.length-1].classList.remove("slideRight")
 })
 
 function behind() {
