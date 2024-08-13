@@ -1,7 +1,7 @@
-import * as THREE from "/Portfolio/Imports/three.module.js"
+import * as THREE from "../Imports/three.module.js"
 
-import {FBXLoader} from "/Portfolio/Imports/FBXLoader.js"
-import {OrbitControls} from "/Portfolio/Imports/OrbitControls.js"
+import {FBXLoader} from "../Imports/FBXLoader.js"
+import {OrbitControls} from "../Imports/OrbitControls.js"
 
 let sceneONE, cameraONE, loaderONE, ambientLightONE, lightONE, rendererONE, orbitCameraONE, clockONE, modelONE
 
@@ -17,7 +17,7 @@ function initONE() {
   
 
   loaderONE = new FBXLoader()
-  loaderONE.load("/Portfolio/Models/guitar.fbx", (fbx) => {
+  loaderONE.load("../Models/AK-47.fbx", (fbx) => {
     modelONE = fbx
     fbx.scale.setScalar(0.0005)
     fbx.position.y -= Math.PI/2
@@ -35,7 +35,7 @@ function initONE() {
   sceneONE.add(ambientLightONE)
 
   lightONE = new THREE.PointLight(0xffffff, 0.5, 100) 
-  lightONE.position.set(4,10,4) 
+  lightONE.position.set(4,10,-5) 
   sceneONE.add(lightONE)
   
 
