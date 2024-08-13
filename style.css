@@ -266,6 +266,23 @@ body {
   }
 }
 
+.slideRight {
+  animation: slideRightAnimation ease 0.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideRightAnimation {
+  0% {
+    opacity:0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity:1;
+    transform: translateX(0px);
+  }
+}
+
 @keyframes slideDownAnimation {
   0% {
     opacity:0;
@@ -276,3 +293,22 @@ body {
     transform: translateY(0px);
   }
 }
+
+.slideLeftOut {
+  animation:slideLeftOutAnimation ease 0.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideLeftOutAnimation {
+  0% {
+    opacity:1;
+    transform: translateX(0px);
+  }
+
+  100% {
+    opacity:0;
+    transform: translateX(-50px);
+  }
+}
+
