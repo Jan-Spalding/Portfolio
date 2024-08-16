@@ -17,7 +17,7 @@ function initTWO() {
   
 
   loaderTWO = new FBXLoader()
-  loaderTWO.load("../Models/guitar.fbx", (fbx) => {
+  loaderTWO.load("../Models/boat.fbx", (fbx) => {
     modelTWO = fbx
     fbx.scale.setScalar(0.007)
     fbx.position.y -= Math.PI/2
