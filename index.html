@@ -21,7 +21,7 @@
       <a class="respSize" style="font-weight: bold;" id="navAbout">About</a>
       <a class="respSize" style="font-weight: bold;" id="navSkill">Skills</a>
       <a class="respSize" style="font-weight: bold;" id="navProject">Projects</a>
-      <a class="respSize" style="font-weight: bold;" id="navContact">Contact</a>
+      <a class="respSize contact" style="font-weight: bold;">Contact</a>
     </div>
   </div>
 
@@ -31,7 +31,7 @@
       <div class="left slideLeft">
         <h1 style="margin:0;font-size:8.5vw;">Jan Spalding</h1>
         <h3 style="margin-top:50px;font-size:2.5vw;">A dedicated programmer and computer scientist.</h3>
-        <a style="padding:10px;animation-delay:0.5s;opacity:0;" class="respSize slideLeft buttonStyle" href="#">CONTACT ME</a>
+        <a style="padding:10px;animation-delay:0.5s;opacity:0;" class="respSize slideLeft buttonStyle contact">CONTACT ME</a>
       </div>
       <div class="right"></div>  
     </div>
@@ -139,6 +139,20 @@
     
   </div>
 
+  <div class="center" id="popup" style="display:none;position:fixed;top:0;height:100%;width:100%;background-color:rgba(0,0,0,0.5);z-index:2;">
+    <div class="column" style="border-radius:16px;background-color:#1c2333;color:white;opacity:0;">
+      <div class="center" id="close" style="border-radius:50%;background-color:red;position:absolute;top:-10px;left:-10px;height:35px;width:35px;">
+        <i class="fa-solid fa-xmark fa-xl" style="color: #000000;"></i>
+      </div>
+      <div class="column" id="copy" style="margin:20px;">
+        <p style="margin:0;font-size:5vh;color:#5239cc;text-shadow: 2px 2px #000">thejanspalding@gmail.com</p>
+        <div class="center" style="width:40%;justify-content: space-evenly;">
+          <i class="fa-solid fa-xl fa-arrow-up" style="color: #ffffff;"></i>
+          <p id="copied" style="font-size:3vh;">Click to copy</p>
+        </div>
+      </div>
+    </div>
+  </div>
   
   
   <script type="module" src="./script.js"></script>

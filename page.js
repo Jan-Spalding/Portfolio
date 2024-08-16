@@ -119,3 +119,33 @@ function infront() {
     return current+1
   }
 }
+
+let contactButtons = document.getElementsByClassName("contact")
+
+for (let i = 0; i < contactButtons.length; i++) {
+  contactButtons[i].addEventListener("click", function() {
+    window.open("mailto:thejanspalding@gmail.com")
+    let popup = document.getElementById("popup")
+    popup.style.display = "flex"
+    popup.classList.add("fadeIn")
+    popup.children[0].classList.add("popup")
+    document.getElementById("copied").innerHTML = "Click to copy"
+  })
+}
+
+document.getElementById("copy").addEventListener("click", function() {
+  let inp = document.createElement('input');
+  document.body.appendChild(inp)
+  inp.value = "thejanspalding@gmail.com"
+  inp.select();
+  document.execCommand("copy");
+  inp.remove();
+  document.getElementById("copied").innerHTML = "Copied!"
+})
+
+document.getElementById("close").addEventListener("click", function() {
+  let popup = document.getElementById("popup")
+  popup.style.display = "none"
+  popup.classList.remove("fadeIn")
+  popup.children[0].classList.remove("popup")
+})
